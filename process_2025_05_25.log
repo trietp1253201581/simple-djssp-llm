@@ -1,0 +1,95 @@
+[2025-05-25 22:52:03] INFO in llm_evo (llm_evo.py:225): Starting evolutionary process
+[2025-05-25 22:52:03] INFO in llm_evo (llm_evo.py:177): Initializing population with 12 individuals
+[2025-05-25 22:52:21] INFO in llm_evo (llm_evo.py:179): Population initialized with 12 individuals
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:206): Start evaluate 12 HDR.
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 1/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 1/12 with makespan=349, fitness=-349
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 2/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 2/12 with makespan=350, fitness=-350
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 3/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 3/12 with makespan=349, fitness=-349
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 4/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 4/12 with makespan=349, fitness=-349
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 5/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 5/12 with makespan=350, fitness=-350
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 6/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 6/12 with makespan=349, fitness=-349
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 7/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 7/12 with makespan=349, fitness=-349
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 8/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 8/12 with makespan=350, fitness=-350
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 9/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 9/12 with makespan=349, fitness=-349
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 10/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 10/12 with makespan=349, fitness=-349
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 11/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 11/12 with makespan=349, fitness=-349
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:209): Evaluate HDR 12/12
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:213): Evaluated HDR 12/12 with makespan=384, fitness=-384
+[2025-05-25 22:52:21] INFO in evaluate (evaluate.py:214): Successfully evaluate 12/12 HDR.
+[2025-05-25 22:52:21] INFO in llm_evo (llm_evo.py:239): Generation 0: Population size 12
+[2025-05-25 22:52:47] ERROR in llm_evo (llm_evo.py:173): Attempt 1/3 failed in <lambda>: 'list' object has no attribute 'decode'
+[2025-05-25 22:52:47] ERROR in llm_evo (llm_evo.py:173): Attempt 2/3 failed in <lambda>: 'list' object has no attribute 'decode'
+[2025-05-25 22:52:47] ERROR in llm_evo (llm_evo.py:173): Attempt 3/3 failed in <lambda>: 'list' object has no attribute 'decode'
+[2025-05-25 22:58:09] INFO in llm_evo (llm_evo.py:224): Starting evolutionary process
+[2025-05-25 22:58:09] INFO in llm_evo (llm_evo.py:177): Initializing population with 12 individuals
+[2025-05-25 22:58:23] INFO in llm_evo (llm_evo.py:179): Population initialized with 12 individuals
+[2025-05-25 22:58:23] INFO in evaluate (evaluate.py:206): Start evaluate 12 HDR.
+[2025-05-25 22:58:23] INFO in evaluate (evaluate.py:209): Evaluate HDR 1/12
+[2025-05-25 22:58:23] INFO in evaluate (evaluate.py:213): Evaluated HDR 1/12 with makespan=349, fitness=-349
+[2025-05-25 22:58:23] INFO in evaluate (evaluate.py:209): Evaluate HDR 2/12
+[2025-05-25 22:58:23] INFO in evaluate (evaluate.py:213): Evaluated HDR 2/12 with makespan=350, fitness=-350
+[2025-05-25 22:58:23] INFO in evaluate (evaluate.py:209): Evaluate HDR 3/12
+[2025-05-25 22:58:23] INFO in evaluate (evaluate.py:213): Evaluated HDR 3/12 with makespan=349, fitness=-349
+[2025-05-25 22:58:23] INFO in evaluate (evaluate.py:209): Evaluate HDR 4/12
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:213): Evaluated HDR 4/12 with makespan=349, fitness=-349
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:209): Evaluate HDR 5/12
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:213): Evaluated HDR 5/12 with makespan=349, fitness=-349
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:209): Evaluate HDR 6/12
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:213): Evaluated HDR 6/12 with makespan=384, fitness=-384
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:209): Evaluate HDR 7/12
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:213): Evaluated HDR 7/12 with makespan=349, fitness=-349
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:209): Evaluate HDR 8/12
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:213): Evaluated HDR 8/12 with makespan=349, fitness=-349
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:209): Evaluate HDR 9/12
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:213): Evaluated HDR 9/12 with makespan=349, fitness=-349
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:209): Evaluate HDR 10/12
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:213): Evaluated HDR 10/12 with makespan=349, fitness=-349
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:209): Evaluate HDR 11/12
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:213): Evaluated HDR 11/12 with makespan=350, fitness=-350
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:209): Evaluate HDR 12/12
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:213): Evaluated HDR 12/12 with makespan=350, fitness=-350
+[2025-05-25 22:58:24] INFO in evaluate (evaluate.py:214): Successfully evaluate 12/12 HDR.
+[2025-05-25 22:58:24] INFO in llm_evo (llm_evo.py:238): Generation 0: Population size 12
+[2025-05-25 22:59:09] INFO in llm_evo (llm_evo.py:243): Generated 12 offsprings from crossover
+[2025-05-25 22:59:15] INFO in llm_evo (llm_evo.py:247): Mutated 1 individuals out of 12 offsprings
+[2025-05-25 22:59:15] INFO in llm_evo (llm_evo.py:250): Evaluating new population
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:206): Start evaluate 12 HDR.
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 1/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 1/12 with makespan=349, fitness=-349
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 2/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 2/12 with makespan=349, fitness=-349
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 3/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 3/12 with makespan=349, fitness=-349
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 4/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 4/12 with makespan=349, fitness=-349
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 5/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 5/12 with makespan=349, fitness=-349
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 6/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 6/12 with makespan=350, fitness=-350
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 7/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 7/12 with makespan=349, fitness=-349
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 8/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 8/12 with makespan=349, fitness=-349
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 9/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 9/12 with makespan=349, fitness=-349
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 10/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 10/12 with makespan=350, fitness=-350
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 11/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 11/12 with makespan=349, fitness=-349
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:209): Evaluate HDR 12/12
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:213): Evaluated HDR 12/12 with makespan=349, fitness=-349
+[2025-05-25 22:59:15] INFO in evaluate (evaluate.py:214): Successfully evaluate 12/12 HDR.
+[2025-05-25 22:59:15] INFO in llm_evo (llm_evo.py:254): New population evaluated with 12 individuals
+[2025-05-25 22:59:15] INFO in llm_evo (llm_evo.py:258): Population replaced, new size is 12
+[2025-05-25 22:59:15] INFO in llm_evo (llm_evo.py:238): Generation 1: Population size 12

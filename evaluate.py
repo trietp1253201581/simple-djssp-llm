@@ -197,9 +197,9 @@ class Evaluator(ABC):
                             setattr(self, field, getattr(loaded, field))
     
 class SimulationBaseEvaluator(Evaluator):
-    def __init__(self, problem):
+    def __init__(self, simulator: Simulator):
         super().__init__(problem)
-        self.simulator = Simulator(self.problem)
+        self.simulator = simulator
         self._logger = logging.getLogger(__name__)
         
     def __call__(self, hdrs) -> List[Tuple[HDR, float]]:
@@ -210,5 +210,6 @@ class SimulationBaseEvaluator(Evaluator):
             makespan = self.simulator.simulate(hdr, debug=False)
             fitness = -makespan
             results.append((hdr, fitness))
+            self._logger.info(f'Evaluated HDR {id + 1}/{len(hdrs)} with makespan={makespan}, fitness={fitness}')
         self._logger.info(f'Successfully evaluate {len(results)}/{len(hdrs)} HDR.')
         return results
