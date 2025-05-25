@@ -1,10 +1,12 @@
 from model import HDR, HDRException
 import problem
 from problem import Problem, Job, Machine, Operation, TerminalDictMaker, Terminal
-from typing import List 
+from typing import List, Tuple
 import logging
 import copy
 import time
+from abc import ABC, abstractmethod
+import pickle
 
 class Simulator:
     DEFAULT_PRIOR: int = -1e9
@@ -155,3 +157,58 @@ class Simulator:
         makespan = max(m.finish_time for m in machines)
         self._print_with_debug(f"Done!, makespan = {makespan}", debug)
         return makespan
+    
+class Evaluator(ABC):
+    def __init__(self, problem: Problem):
+        self.problem = problem
+        
+    @abstractmethod
+    def __call__(self, hdrs: List[HDR]) -> List[Tuple[HDR, float]]:
+        pass
+    
+    def save_state(self, checkpoint_path: str, fields_to_save: list|None = None):
+        with open(checkpoint_path, 'wb') as f:
+            if fields_to_save is None:
+                pickle.dump(self, f)
+            else:
+                data = {field: getattr(self, field) for field in fields_to_save if hasattr(self, field)}
+                pickle.dump(data, f)
+            
+    def load_state(self, checkpoint_path: str, fields_to_update: list | None = None):
+        with open(checkpoint_path, 'rb') as f:
+            loaded = pickle.load(f)
+    
+            if isinstance(loaded, dict):
+                # Nếu file chứa dict, thì lấy từ dict
+                if fields_to_update is None:
+                    for field, value in loaded.items():
+                        setattr(self, field, value)
+                else:
+                    for field in fields_to_update:
+                        if field in loaded:
+                            setattr(self, field, loaded[field])
+            else:
+                # Nếu file chứa nguyên object
+                if fields_to_update is None:
+                    self.__dict__.update(loaded.__dict__)
+                else:
+                    for field in fields_to_update:
+                        if hasattr(loaded, field):
+                            setattr(self, field, getattr(loaded, field))
+    
+class SimulationBaseEvaluator(Evaluator):
+    def __init__(self, problem):
+        super().__init__(problem)
+        self.simulator = Simulator(self.problem)
+        self._logger = logging.getLogger(__name__)
+        
+    def __call__(self, hdrs) -> List[Tuple[HDR, float]]:
+        self._logger.info(f'Start evaluate {len(hdrs)} HDR.')
+        results = []
+        for id, hdr in enumerate(hdrs):
+            self._logger.info(f'Evaluate HDR {id + 1}/{len(hdrs)}')
+            makespan = self.simulator.simulate(hdr, debug=False)
+            fitness = -makespan
+            results.append((hdr, fitness))
+        self._logger.info(f'Successfully evaluate {len(results)}/{len(hdrs)} HDR.')
+        return results
